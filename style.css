@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.field {
+    border-left: 20px ridge #C0C0C0;
+    border-top: 20px ridge #C0C0C0;
+    border-bottom: 20px ridge #DCDCDC;
+    border-right: 20px ridge #DCDCDC;
+    min-width: 20%;
+    margin: 5vh auto;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #C0C0C0;
+}
+
+.blockInfo {
+    border-bottom: 20px ridge #DCDCDC;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.staticInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.restart {
+    height: 40px;
+    width: 40px;
+    border: 2px outset #C0C0C0;
+    background-color: #A9A9A9;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.widthField, .quantityMine, .heightField {
+    width: 40px;
+    outline: none;
+    margin:0 30px;
+    color: #363636;
+}
+
+.flag, .total {
+    height: 30px;
+    width: 50px;
+    color: #FF0000;
+    background-color: #800000;
+    font-size: 15px;
+    font-weight: 800;
+    border: 2px inset #C0C0C0;
+}
+
+.icon {
+    height: 30px;
+    position: relative;
+    top: 10px;
+
+}
+
+.smill {
+    height: 30px;
+
+}
+
+.mine {
+    height: 80%;
+    background-color: #A9A9A9;
+
+}
+
+.mineField {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.newSquare {
+    border: 0.5px solid #DCDCDC;
+    background-color: #FFFFFF;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.bomb {
+    background-image: url("img/cell_mine.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.textInfo{
+    font-size: 40px;
+    position: absolute;
+    font-weight: 900;
+    z-index:5;
+    opacity: 0.7;
+    color: rgba(0, 255, 0, 0);
+     animation: colorchange 4s infinite ease-in-out;
+}
+
+@keyframes colorchange {
+    0% {
+
+        color: blue;
+    }
+
+    10% {
+
+        color: #8e44ad;
+    }
+
+    20% {
+
+        color: #1abc9c;
+    }
+
+    30% {
+
+        color: #d35400;
+    }
+
+    40% {
+
+        color: blue;
+    }
+
+    50% {
+
+        color: #34495e;
+    }
+
+    60% {
+
+        color: #f1c40f;}
+
+    70% {
+
+        color: #2980b9;
+    }
+    80% {
+
+        color: blue;
+    }
+
+    90% {
+
+        color: #2980b9;
+    }
+
+    100% {
+
+        color: pink;
+    }
+}
